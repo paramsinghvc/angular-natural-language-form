@@ -1,0 +1,92 @@
+.nl-form {}
+.nl-form input:placeholder {
+    color: #fff;
+}
+.nl-form input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    ;
+}
+.nl-form input:-moz-placeholder {
+    color: #fff;
+}
+.nl-form input::-moz-placeholder {
+    color: #fff;
+}
+.nl-form input:-ms-input-placeholder {
+    color: #fff;
+}
+.nl-form .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.78);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.nl-form .overlay.visible {
+    visibility: visible;
+    transition: 0.2s;
+}
+.nl-form .filler {
+    border-bottom: 2px dotted #11da9a;
+    color: rgb(168, 168, 168) !important;
+}
+.nl-form .textfield {
+    visibility: hidden;
+    position: fixed;
+    max-width: 340px;
+    left: 50%;
+    z-index: 100000;
+    margin-left: -160px;
+}
+.nl-form .textfield.visible {
+    visibility: visible;
+}
+.nl-form .textfield input[type="text"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    background: #32BF92;
+    font-size: 42px;
+    width: 231px;
+    font-weight: 100;
+}
+.nl-form .textfield .submitBtn {
+    border: none;
+    background: #1A7D5D;
+    color: #fff;
+    padding: 21px;
+    outline: none;
+    display: inline-block;
+    font-size: 24px;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+}
+.nl-form .combo {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    display: none;
+    z-index: 100000;
+}
+.nl-form .combo.visible {
+    display: block;
+}
+.nl-form .combo ul {
+    list-style: none;
+    background: #5EC3B2;
+    padding: 0px;
+}
+.nl-form .combo ul li {
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nl-form .combo ul li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}

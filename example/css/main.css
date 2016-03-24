@@ -1,0 +1,10 @@
+body{
+    background: #161712;
+    color : #fff;
+    font-family: "helvetica neue";
+    font-size: 22px;
+}
+.main{
+    display: inline-block;
+    margin: 100px auto;
+}
